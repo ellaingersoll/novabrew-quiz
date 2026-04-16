@@ -165,6 +165,9 @@ function IntroPanel({ onStart }: { onStart: () => void }) {
           feels personal, memorable, and actually useful for what NovaBrew should
           send you next.
         </p>
+        <p className="mt-4 inline-flex rounded-full border border-[#dcccbc] bg-white/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#8b694c]">
+          Now live on the web
+        </p>
       </div>
 
       <div className="grid gap-4 rounded-[28px] border border-[#dbc9b8] bg-white/70 p-5 sm:grid-cols-3">
