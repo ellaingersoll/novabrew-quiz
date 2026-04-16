@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaBrew Style Preview — Minimal</title>
+  <style>
+    :root {
+      --bg: #f5f1ea;
+      --panel: #fffdf9;
+      --text: #2c241d;
+      --muted: #75685c;
+      --accent: #8f6443;
+      --border: #ded3c6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at top left, rgba(143, 100, 67, 0.12), transparent 30%),
+        linear-gradient(180deg, #f7f3ed 0%, var(--bg) 100%);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      padding: 24px;
+    }
+    .card {
+      width: min(760px, 100%);
+      background: rgba(255, 253, 249, 0.92);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 40px;
+      box-shadow: 0 24px 80px rgba(54, 38, 24, 0.08);
+      backdrop-filter: blur(8px);
+    }
+    .eyebrow {
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font: 600 0.75rem/1.4 Arial, sans-serif;
+      color: var(--accent);
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.02;
+      font-weight: 600;
+    }
+    p {
+      margin: 0 0 28px;
+      color: var(--muted);
+      font: 400 1rem/1.7 Arial, sans-serif;
+      max-width: 44rem;
+    }
+    .progress {
+      display: flex;
+      justify-content: space-between;
+      font: 600 0.9rem/1.4 Arial, sans-serif;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .bar {
+      height: 10px;
+      border-radius: 999px;
+      background: #e9dfd3;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+    .bar > span {
+      display: block;
+      width: 42%;
+      height: 100%;
+      background: linear-gradient(90deg, #b9895d, var(--accent));
+    }
+    .options {
+      display: grid;
+      gap: 14px;
+    }
+    .option {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px 20px;
+      background: #fff;
+      transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+      font: 500 1rem/1.5 Arial, sans-serif;
+      color: var(--text);
+    }
+    .option:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+      box-shadow: 0 16px 36px rgba(143, 100, 67, 0.12);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="eyebrow">NovaBrew Taste Profile Quiz</div>
+    <h1>Your ideal Saturday morning starts with...</h1>
+    <p>
+      This version feels calm, elevated, and editorial. It is meant to feel premium without being intimidating.
+    </p>
+    <div class="progress">
+      <span>Question 3 of 7</span>
+      <span>42% complete</span>
+    </div>
+    <div class="bar"><span></span></div>
+    <section class="options">
+      <div class="option">A slow solo ritual with a strong, no-nonsense cup before the world wakes up.</div>
+      <div class="option">A bright table by the window, good light, and something smooth while you ease into the day.</div>
+      <div class="option">A blanket, a book, and a comforting mug that feels like home.</div>
+      <div class="option">A spontaneous detour somewhere new, with whatever surprising thing the barista recommends.</div>
+    </section>
+  </main>
+</body>
+</html>
